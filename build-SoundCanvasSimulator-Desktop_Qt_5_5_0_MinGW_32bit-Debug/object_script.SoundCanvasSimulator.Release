@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\protonectsim.o
+./release\soundcanvas.o
+./release\maccommon.o
+./release\macmidiinput.o
+./release\macmidioutput.o
+./release\winmidiinput.o
+./release\winmidioutput.o
+./release\moc_midiinput.o
+./release\moc_midioutput.o
+);
