@@ -7,13 +7,13 @@
 SoundCanvas::SoundCanvas(std::string name)
 {
     this->name = name;
-    midiOutput.open("Microsoft GS Wavetable Synth");
+    midiOutput.open("QuickTime Music");
     midichannel = 41;
-    //midiOutput.sendNoteOn(midichannel, 67, 127);
+    midiOutput.sendNoteOn(midichannel, 67, 127);
 }
 
 SoundCanvas::~SoundCanvas(){
-    //midiOutput.close();
+    midiOutput.close();
 }
 
 void SoundCanvas::Update(float mid, int mindepth, float distance)
@@ -24,6 +24,6 @@ void SoundCanvas::Update(float mid, int mindepth, float distance)
 
     std::cout << "Mid: " << mid << " Min: " << mindepth << " Dist: " << distance  << std::endl;
 
-    //midiOutput.sendPitchBend(midichannel, distance);
+    midiOutput.sendPitchBend(midichannel, distance);
 
 }
