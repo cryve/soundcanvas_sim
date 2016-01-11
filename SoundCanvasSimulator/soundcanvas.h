@@ -19,6 +19,7 @@ class SoundCanvas
         float mid;
         int mindepth;
         float distance;
+        int calcPitchbend(int);
 
 };
 
